@@ -1,8 +1,20 @@
-# Vagrant Single Machine
+# Vagrant Cluster 
 
-Deploy a single Virtual Machine
+This Vagrantfile specifies the deployment of a Cluster of Virtual Machines (master,slave_1,slave_2) on which machines can communicate to each other. This enviroments are desiable ot perform distrubited computations on which machines needs to communicate to perform the compelete job. 
 
 ### Getting Started
+
+Clone this repository in your PC.
+
+```sh
+git clone https://github.com/DonAurelio/vagrant.git
+```
+
+Get into the **cluster** configuration folder
+
+```sh
+cd vagrant/cluster
+```
 
 Start cluster
 

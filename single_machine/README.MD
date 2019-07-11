@@ -1,8 +1,20 @@
 # Vagrant Single Machine
 
-Deploy a single Virtual Machine
+This Vagrantfile specifies the deployment of a single Virtual Machine.
 
 ### Getting Started
+
+Clone this repository in your PC.
+
+```sh
+git clone https://github.com/DonAurelio/vagrant.git
+```
+
+Get into the **cluster** configuration folder
+
+```sh
+cd vagrant/cluster
+```
 
 Start cluster
 
