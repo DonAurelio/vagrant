@@ -1,10 +1,10 @@
 # Vagrant Cluster 
 
-This Vagrantfile specifies the deployment of a Cluster of Virtual Machines (master,slave_1,slave_2) on which machines can communicate to each other. This enviroments are desiable ot perform distrubited computations on which machines needs to communicate to perform the compelete job. 
+This Vagrantfile specifies the deployment of a Cluster of Virtual Machines (master,slave_1,slave_2) on which machines can communicate to each other. This kind of enviroments are desiable to perform distrubited computations on which machines needs to communicate to perform the compelete job.
 
 ### Getting Started
 
-Clone this repository in your PC.
+Clone this repository
 
 ```sh
 git clone https://github.com/DonAurelio/vagrant.git
@@ -22,19 +22,21 @@ Start cluster
 vagrant up
 ```
 
-Get into the machine
+Get into the one machine of the cluster (master, slave_1 or slave_2)
 
 ```sh
-vagrant ssh
+vagrant ssh master
+vagrant ssh slave_1
+vagrant ssh slave_2
 ```
 
-Stop virtual machine
+Stop cluster
 
 ```sh
 vagrant halt
 ```
 
-Destroy virtual machine
+Destroy cluster
 
 ```sh
 vagrant destroy
@@ -42,7 +44,7 @@ vagrant destroy
 
 ### Share Files (Virtual Machine and Host)
 
-Vagrant enable by default a directory in to the Virtual Machine **/vagrant** which is shared with the folder on which the Vagrantfile resides in the Host.
+Vagrant enable by default a directory in to the Virtual Machines **/vagrant** which is shared with the folder on which the Vagrantfile resides in the Host.
 
 ### Further Information
 
