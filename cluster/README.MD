@@ -22,12 +22,11 @@ Start cluster
 vagrant up
 ```
 
-Get into the one machine of the cluster (master, slave_1 or slave_2)
+Get into the one machine of the cluster (master or slave)
 
 ```sh
 vagrant ssh master
-vagrant ssh slave_1
-vagrant ssh slave_2
+vagrant ssh slave
 ```
 
 Stop cluster
@@ -65,20 +64,12 @@ Host master
   IdentityFile /home/username/Desktop/vagrant/cluster/.vagrant/machines/master/virtualbox/private_key
   ...
 
-Host slave_1
+Host slave
   HostName 127.0.0.1
   User vagrant
   Port 2200
   ...
   IdentityFile /home/username/Desktop/vagrant/cluster/.vagrant/machines/slave_1/virtualbox/private_key
-  ...
-
-Host slave_2
-  HostName 127.0.0.1
-  User vagrant
-  Port 2201
-  ...
-  IdentityFile /home/username/Desktop/vagrant/cluster/.vagrant/machines/slave_2/virtualbox/private_key
   ...
 ```
 
